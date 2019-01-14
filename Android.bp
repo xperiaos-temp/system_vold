@@ -141,12 +141,12 @@ cc_library_static {
             ],
         },
         gzosp: {
-            device_support_hwfde: {
+            supports_hw_fde: {
                 cflags: ["-DCONFIG_HW_DISK_ENCRYPTION"],
                 header_libs: ["libcryptfs_hw_headers"],
                 shared_libs: ["libcryptfs_hw"],
             },
-            device_support_hwfde_perf: {
+            supports_hw_fde_perf: {
                 cflags: ["-DCONFIG_HW_DISK_ENCRYPT_PERF"],
             },
         },
@@ -170,7 +170,7 @@ cc_binary {
             ],
         },
         gzosp: {
-            device_support_hwfde: {
+            supports_hw_fde: {
                 shared_libs: ["libcryptfs_hw"],
             },
         },
